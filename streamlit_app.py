@@ -2,13 +2,17 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
+from tensorflow.keras.applications import MobileNetV2
 
 # ── CONFIG ───────────────────────────────────────────────────
 IMG_SIZE = (224, 224)
 LABELS   = ['organic', 'recyclable', 'hazardous']
 
-# Load the model
-model = tf.keras.models.load_model("waste_classifier_final.keras")
+# ── LOAD MODEL ───────────────────────────────────────────────
+# Make sure this file is committed to your repo alongside this script:
+
+MODEL_PATH = "waste_classifier_final.keras"
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 # ── UI LAYOUT ─────────────────────────────────────────────────
 st.set_page_config(page_title="Waste Classifier", layout="centered")
