@@ -1,0 +1,10 @@
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Raw data & downloads
+data/
+trashnet-master/
+
+# OS files
+.DS_Store
+Thumbs.db
