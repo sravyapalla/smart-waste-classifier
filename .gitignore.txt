@@ -1,0 +1,21 @@
+# Byte‐compiled / cached  
+__pycache__/  
+*.py[cod]  
+.ipynb_checkpoints/  
+
+# Virtual envs  
+venv/  
+.env/  
+
+# Data  
+data/  
+
+# Models & artifacts  
+*.h5  
+*.keras  
+waste_classifier_savedmodel_dir/  
+waste_classifier_final.keras  
+
+# OS files  
+.DS_Store  
+Thumbs.db  
